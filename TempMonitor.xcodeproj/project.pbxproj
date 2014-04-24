@@ -32,6 +32,8 @@
 		4EA689031908CF3F0003A923 /* AppetiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689021908CF3F0003A923 /* AppetiteViewController.m */; };
 		4EA689061908CF4D0003A923 /* HydrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689051908CF4D0003A923 /* HydrationViewController.m */; };
 		4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890B1908D0900003A923 /* HistoryViewController.m */; };
+		4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890E1909213A0003A923 /* ProfileViewController.m */; };
+		4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689111909214F0003A923 /* AddProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		4EA689051908CF4D0003A923 /* HydrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HydrationViewController.m; sourceTree = "<group>"; };
 		4EA6890A1908D0900003A923 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		4EA6890B1908D0900003A923 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		4EA6890D190921390003A923 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		4EA6890E1909213A0003A923 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		4EA689101909214F0003A923 /* AddProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProfileViewController.h; sourceTree = "<group>"; };
+		4EA689111909214F0003A923 /* AddProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 		4E78C91319027ED6005C1A16 = {
 			isa = PBXGroup;
 			children = (
+				4EA689101909214F0003A923 /* AddProfileViewController.h */,
+				4EA689111909214F0003A923 /* AddProfileViewController.m */,
+				4EA6890D190921390003A923 /* ProfileViewController.h */,
+				4EA6890E1909213A0003A923 /* ProfileViewController.m */,
 				4EA6890A1908D0900003A923 /* HistoryViewController.h */,
 				4EA6890B1908D0900003A923 /* HistoryViewController.m */,
 				4EA689041908CF4D0003A923 /* HydrationViewController.h */,
@@ -308,6 +318,8 @@
 				4EA689061908CF4D0003A923 /* HydrationViewController.m in Sources */,
 				4EA688F11908CE530003A923 /* tempViewController.m in Sources */,
 				4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */,
+				4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */,
+				4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */,
 				4E78C92C19027ED6005C1A16 /* main.m in Sources */,
 				4EA688EE1908CE410003A923 /* concernViewController.m in Sources */,
 				4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */,
