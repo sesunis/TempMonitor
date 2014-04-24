@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>95991475-7C90-4DA4-8317-639B63746E88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TempMonitor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>79B90F2D-EFFC-42BC-BF40-0A060CD533DF</key>
+		<string>https://github.com/sesunis/TempMonitor.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TempMonitor.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>79B90F2D-EFFC-42BC-BF40-0A060CD533DF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sesunis/TempMonitor.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>79B90F2D-EFFC-42BC-BF40-0A060CD533DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>79B90F2D-EFFC-42BC-BF40-0A060CD533DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TempMonitor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

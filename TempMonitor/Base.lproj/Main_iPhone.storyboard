@@ -132,15 +132,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="btnActivity" destination="NJq-b9-Vra" id="vOJ-I4-he3"/>
+                        <outlet property="btnAppetite" destination="kh9-bI-dsS" id="3Or-sf-QVv"/>
+                        <outlet property="btnConcerns" destination="kh9-bI-dsS" id="dxO-4i-IJG"/>
+                        <outlet property="btnDiagnosis" destination="kh9-bI-dsS" id="y6D-vH-m6V"/>
+                        <outlet property="btnHistory" destination="kh9-bI-dsS" id="PXy-R0-9aR"/>
+                        <outlet property="btnHydration" destination="kh9-bI-dsS" id="quj-7s-TM4"/>
+                        <outlet property="btnMedication" destination="kh9-bI-dsS" id="ldm-9g-R20"/>
+                        <outlet property="btnSymptoms" destination="kh9-bI-dsS" id="S7g-P6-eCc"/>
+                        <outlet property="btnTemp" destination="kh9-bI-dsS" id="4Ni-fy-2dV"/>
+                        <outlet property="btnVideoMonitor" destination="kh9-bI-dsS" id="k84-7Z-EBJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="110" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Hydration View Controller-->
         <scene sceneID="cH4-R2-63d">
             <objects>
-                <viewController id="q7J-8a-C20" sceneMemberID="viewController">
+                <viewController id="q7J-8a-C20" customClass="HydrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sbu-Qj-I3Z"/>
                         <viewControllerLayoutGuide type="bottom" id="Wy7-Lo-51g"/>
@@ -197,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="-3366" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Video Monitor View Controller-->
         <scene sceneID="E2G-by-wLy">
             <objects>
-                <viewController id="0jv-gm-kLp" sceneMemberID="viewController">
+                <viewController id="0jv-gm-kLp" customClass="VideoMonitorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7E5-Kp-TUt"/>
                         <viewControllerLayoutGuide type="bottom" id="5ON-VM-iQu"/>
@@ -227,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="-3018" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Appetite View Controller-->
         <scene sceneID="d7D-MW-E4A">
             <objects>
-                <viewController id="7eU-gR-Uv7" sceneMemberID="viewController">
+                <viewController id="7eU-gR-Uv7" customClass="AppetiteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0pE-x0-fyP"/>
                         <viewControllerLayoutGuide type="bottom" id="3MS-62-FZX"/>
@@ -257,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="-2337" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Concern View Controller-->
         <scene sceneID="BG3-mx-QY4">
             <objects>
-                <viewController id="fhK-yQ-dh8" sceneMemberID="viewController">
+                <viewController id="fhK-yQ-dh8" customClass="concernViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4jh-41-QVG"/>
                         <viewControllerLayoutGuide type="bottom" id="lNK-ad-kgZ"/>
@@ -323,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="-275" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Temp Monitor View Controller-->
         <scene sceneID="hA3-ih-WOw">
             <objects>
-                <viewController id="E6j-Qv-CLz" sceneMemberID="viewController">
+                <viewController id="E6j-Qv-CLz" customClass="TempMonitorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyQ-Nz-Mz4"/>
                         <viewControllerLayoutGuide type="bottom" id="CyA-r6-rWi"/>
@@ -357,7 +369,7 @@
                                 <rect key="frame" x="0.0" y="49" width="320" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="acQ-Sh-3R7" id="4je-My-XM5">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="428"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -381,10 +393,10 @@
             </objects>
             <point key="canvasLocation" x="-623" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Symptoms View Controller-->
         <scene sceneID="vQR-B3-Di7">
             <objects>
-                <viewController id="uTh-eQ-Sj4" sceneMemberID="viewController">
+                <viewController id="uTh-eQ-Sj4" customClass="symptomsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MAM-Eo-x5K"/>
                         <viewControllerLayoutGuide type="bottom" id="1ig-WV-8l6"/>
@@ -411,10 +423,10 @@
             </objects>
             <point key="canvasLocation" x="-968" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Medication View Controller-->
         <scene sceneID="4q0-2l-jh8">
             <objects>
-                <viewController id="t4n-lp-szz" sceneMemberID="viewController">
+                <viewController id="t4n-lp-szz" customClass="MedicationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qmW-u8-8Ak"/>
                         <viewControllerLayoutGuide type="bottom" id="TaH-JF-kue"/>
@@ -441,10 +453,10 @@
             </objects>
             <point key="canvasLocation" x="-1314" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Activity View Controller-->
         <scene sceneID="r2V-xB-PeP">
             <objects>
-                <viewController id="yM7-Sw-lV0" sceneMemberID="viewController">
+                <viewController id="yM7-Sw-lV0" customClass="ActivityViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S7L-on-Nev"/>
                         <viewControllerLayoutGuide type="bottom" id="qtt-4n-iW1"/>
@@ -471,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="-1657" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Diagnose View Controller-->
         <scene sceneID="ES5-VO-o6B">
             <objects>
-                <viewController id="9ta-o2-ZvH" sceneMemberID="viewController">
+                <viewController id="9ta-o2-ZvH" customClass="DiagnoseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rTr-Gc-dga"/>
                         <viewControllerLayoutGuide type="bottom" id="o28-vc-Jhp"/>
@@ -669,7 +681,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="KwS-lg-XXV"/>
+        <segue reference="wLd-jD-Lnf"/>
         <segue reference="awi-bX-Jse"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,6 +22,16 @@
 		4E78C94419027ED7005C1A16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78C92319027ED6005C1A16 /* UIKit.framework */; };
 		4E78C94C19027ED7005C1A16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E78C94A19027ED7005C1A16 /* InfoPlist.strings */; };
 		4E78C94E19027ED7005C1A16 /* TempMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E78C94D19027ED7005C1A16 /* TempMonitorTests.m */; };
+		4EA688EE1908CE410003A923 /* concernViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688ED1908CE410003A923 /* concernViewController.m */; };
+		4EA688F11908CE530003A923 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F01908CE530003A923 /* tempViewController.m */; };
+		4EA688F41908CE7F0003A923 /* VideoMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F31908CE7F0003A923 /* VideoMonitorViewController.m */; };
+		4EA688F71908CE960003A923 /* symptomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F61908CE960003A923 /* symptomsViewController.m */; };
+		4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F91908CEA60003A923 /* MedicationViewController.m */; };
+		4EA688FD1908CEC40003A923 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688FC1908CEC40003A923 /* ActivityViewController.m */; };
+		4EA689001908CEEF0003A923 /* DiagnoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688FF1908CEEF0003A923 /* DiagnoseViewController.m */; };
+		4EA689031908CF3F0003A923 /* AppetiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689021908CF3F0003A923 /* AppetiteViewController.m */; };
+		4EA689061908CF4D0003A923 /* HydrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689051908CF4D0003A923 /* HydrationViewController.m */; };
+		4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890B1908D0900003A923 /* HistoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,26 @@
 		4E78C94919027ED7005C1A16 /* TempMonitorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TempMonitorTests-Info.plist"; sourceTree = "<group>"; };
 		4E78C94B19027ED7005C1A16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E78C94D19027ED7005C1A16 /* TempMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempMonitorTests.m; sourceTree = "<group>"; };
+		4EA688EC1908CE410003A923 /* concernViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concernViewController.h; sourceTree = "<group>"; };
+		4EA688ED1908CE410003A923 /* concernViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = concernViewController.m; sourceTree = "<group>"; };
+		4EA688EF1908CE530003A923 /* tempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tempViewController.h; sourceTree = "<group>"; };
+		4EA688F01908CE530003A923 /* tempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tempViewController.m; sourceTree = "<group>"; };
+		4EA688F21908CE7F0003A923 /* VideoMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMonitorViewController.h; sourceTree = "<group>"; };
+		4EA688F31908CE7F0003A923 /* VideoMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMonitorViewController.m; sourceTree = "<group>"; };
+		4EA688F51908CE960003A923 /* symptomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symptomsViewController.h; sourceTree = "<group>"; };
+		4EA688F61908CE960003A923 /* symptomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = symptomsViewController.m; sourceTree = "<group>"; };
+		4EA688F81908CEA60003A923 /* MedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationViewController.h; sourceTree = "<group>"; };
+		4EA688F91908CEA60003A923 /* MedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationViewController.m; sourceTree = "<group>"; };
+		4EA688FB1908CEC40003A923 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		4EA688FC1908CEC40003A923 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		4EA688FE1908CEEF0003A923 /* DiagnoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagnoseViewController.h; sourceTree = "<group>"; };
+		4EA688FF1908CEEF0003A923 /* DiagnoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnoseViewController.m; sourceTree = "<group>"; };
+		4EA689011908CF3F0003A923 /* AppetiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppetiteViewController.h; sourceTree = "<group>"; };
+		4EA689021908CF3F0003A923 /* AppetiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppetiteViewController.m; sourceTree = "<group>"; };
+		4EA689041908CF4D0003A923 /* HydrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HydrationViewController.h; sourceTree = "<group>"; };
+		4EA689051908CF4D0003A923 /* HydrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HydrationViewController.m; sourceTree = "<group>"; };
+		4EA6890A1908D0900003A923 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		4EA6890B1908D0900003A923 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +114,26 @@
 		4E78C91319027ED6005C1A16 = {
 			isa = PBXGroup;
 			children = (
+				4EA6890A1908D0900003A923 /* HistoryViewController.h */,
+				4EA6890B1908D0900003A923 /* HistoryViewController.m */,
+				4EA689041908CF4D0003A923 /* HydrationViewController.h */,
+				4EA689051908CF4D0003A923 /* HydrationViewController.m */,
+				4EA689011908CF3F0003A923 /* AppetiteViewController.h */,
+				4EA689021908CF3F0003A923 /* AppetiteViewController.m */,
+				4EA688FE1908CEEF0003A923 /* DiagnoseViewController.h */,
+				4EA688FF1908CEEF0003A923 /* DiagnoseViewController.m */,
+				4EA688FB1908CEC40003A923 /* ActivityViewController.h */,
+				4EA688FC1908CEC40003A923 /* ActivityViewController.m */,
+				4EA688F81908CEA60003A923 /* MedicationViewController.h */,
+				4EA688F91908CEA60003A923 /* MedicationViewController.m */,
+				4EA688F51908CE960003A923 /* symptomsViewController.h */,
+				4EA688F61908CE960003A923 /* symptomsViewController.m */,
+				4EA688F21908CE7F0003A923 /* VideoMonitorViewController.h */,
+				4EA688F31908CE7F0003A923 /* VideoMonitorViewController.m */,
+				4EA688EF1908CE530003A923 /* tempViewController.h */,
+				4EA688F01908CE530003A923 /* tempViewController.m */,
+				4EA688EC1908CE410003A923 /* concernViewController.h */,
+				4EA688ED1908CE410003A923 /* concernViewController.m */,
 				4E78C92519027ED6005C1A16 /* TempMonitor */,
 				4E78C94719027ED7005C1A16 /* TempMonitorTests */,
 				4E78C91E19027ED6005C1A16 /* Frameworks */,
@@ -254,8 +304,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA689031908CF3F0003A923 /* AppetiteViewController.m in Sources */,
+				4EA689061908CF4D0003A923 /* HydrationViewController.m in Sources */,
+				4EA688F11908CE530003A923 /* tempViewController.m in Sources */,
+				4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */,
 				4E78C92C19027ED6005C1A16 /* main.m in Sources */,
+				4EA688EE1908CE410003A923 /* concernViewController.m in Sources */,
+				4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */,
+				4EA688F71908CE960003A923 /* symptomsViewController.m in Sources */,
+				4EA688F41908CE7F0003A923 /* VideoMonitorViewController.m in Sources */,
+				4EA689001908CEEF0003A923 /* DiagnoseViewController.m in Sources */,
 				4E78C93019027ED6005C1A16 /* TempMonitorAppDelegate.m in Sources */,
+				4EA688FD1908CEC40003A923 /* ActivityViewController.m in Sources */,
 				4E78C93919027ED6005C1A16 /* TempMonitorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +531,7 @@
 				4E78C95319027ED7005C1A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E78C95419027ED7005C1A16 /* Build configuration list for PBXNativeTarget "TempMonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +540,7 @@
 				4E78C95619027ED7005C1A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
