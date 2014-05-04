@@ -10,4 +10,5 @@
 
 @interface AddProfileViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnSaveProfile;
 @end

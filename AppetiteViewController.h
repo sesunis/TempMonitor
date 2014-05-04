@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AppetiteViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *btnBarelyAte;
+@property (strong, nonatomic) IBOutlet UIButton *btnHungry;
+@property (strong, nonatomic) IBOutlet UIButton *btnSipped;
 
 @end

@@ -27,10 +27,7 @@
 		4EA688F41908CE7F0003A923 /* VideoMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F31908CE7F0003A923 /* VideoMonitorViewController.m */; };
 		4EA688F71908CE960003A923 /* symptomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F61908CE960003A923 /* symptomsViewController.m */; };
 		4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688F91908CEA60003A923 /* MedicationViewController.m */; };
-		4EA688FD1908CEC40003A923 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688FC1908CEC40003A923 /* ActivityViewController.m */; };
-		4EA689001908CEEF0003A923 /* DiagnoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA688FF1908CEEF0003A923 /* DiagnoseViewController.m */; };
 		4EA689031908CF3F0003A923 /* AppetiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689021908CF3F0003A923 /* AppetiteViewController.m */; };
-		4EA689061908CF4D0003A923 /* HydrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689051908CF4D0003A923 /* HydrationViewController.m */; };
 		4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890B1908D0900003A923 /* HistoryViewController.m */; };
 		4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890E1909213A0003A923 /* ProfileViewController.m */; };
 		4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689111909214F0003A923 /* AddProfileViewController.m */; };
@@ -77,14 +74,8 @@
 		4EA688F61908CE960003A923 /* symptomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = symptomsViewController.m; sourceTree = "<group>"; };
 		4EA688F81908CEA60003A923 /* MedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationViewController.h; sourceTree = "<group>"; };
 		4EA688F91908CEA60003A923 /* MedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationViewController.m; sourceTree = "<group>"; };
-		4EA688FB1908CEC40003A923 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
-		4EA688FC1908CEC40003A923 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
-		4EA688FE1908CEEF0003A923 /* DiagnoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagnoseViewController.h; sourceTree = "<group>"; };
-		4EA688FF1908CEEF0003A923 /* DiagnoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnoseViewController.m; sourceTree = "<group>"; };
 		4EA689011908CF3F0003A923 /* AppetiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppetiteViewController.h; sourceTree = "<group>"; };
 		4EA689021908CF3F0003A923 /* AppetiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppetiteViewController.m; sourceTree = "<group>"; };
-		4EA689041908CF4D0003A923 /* HydrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HydrationViewController.h; sourceTree = "<group>"; };
-		4EA689051908CF4D0003A923 /* HydrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HydrationViewController.m; sourceTree = "<group>"; };
 		4EA6890A1908D0900003A923 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		4EA6890B1908D0900003A923 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		4EA6890D190921390003A923 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -126,14 +117,8 @@
 				4EA6890E1909213A0003A923 /* ProfileViewController.m */,
 				4EA6890A1908D0900003A923 /* HistoryViewController.h */,
 				4EA6890B1908D0900003A923 /* HistoryViewController.m */,
-				4EA689041908CF4D0003A923 /* HydrationViewController.h */,
-				4EA689051908CF4D0003A923 /* HydrationViewController.m */,
 				4EA689011908CF3F0003A923 /* AppetiteViewController.h */,
 				4EA689021908CF3F0003A923 /* AppetiteViewController.m */,
-				4EA688FE1908CEEF0003A923 /* DiagnoseViewController.h */,
-				4EA688FF1908CEEF0003A923 /* DiagnoseViewController.m */,
-				4EA688FB1908CEC40003A923 /* ActivityViewController.h */,
-				4EA688FC1908CEC40003A923 /* ActivityViewController.m */,
 				4EA688F81908CEA60003A923 /* MedicationViewController.h */,
 				4EA688F91908CEA60003A923 /* MedicationViewController.m */,
 				4EA688F51908CE960003A923 /* symptomsViewController.h */,
@@ -315,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA689031908CF3F0003A923 /* AppetiteViewController.m in Sources */,
-				4EA689061908CF4D0003A923 /* HydrationViewController.m in Sources */,
 				4EA688F11908CE530003A923 /* tempViewController.m in Sources */,
 				4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */,
 				4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */,
@@ -325,9 +309,7 @@
 				4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */,
 				4EA688F71908CE960003A923 /* symptomsViewController.m in Sources */,
 				4EA688F41908CE7F0003A923 /* VideoMonitorViewController.m in Sources */,
-				4EA689001908CEEF0003A923 /* DiagnoseViewController.m in Sources */,
 				4E78C93019027ED6005C1A16 /* TempMonitorAppDelegate.m in Sources */,
-				4EA688FD1908CEC40003A923 /* ActivityViewController.m in Sources */,
 				4E78C93919027ED6005C1A16 /* TempMonitorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
