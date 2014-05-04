@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MedicationViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UISegmentedControl *btnMedicineSchedule;
+@property (strong, nonatomic) IBOutlet UIButton *btnAddDosageTime;
+@property (strong, nonatomic) IBOutlet UIButton *btnAutoReminder;
 
 @end

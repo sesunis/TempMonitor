@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VideoMonitorViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *btnStartStop;
 
 @end

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface symptomsViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *btnSave;
+@property (strong, nonatomic) IBOutlet UIButton *BtnAddNotes;
+@property (strong, nonatomic) IBOutlet UIButton *btnFeelingBetter;
 
 @end

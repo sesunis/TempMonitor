@@ -20,4 +20,9 @@
 @property (strong, nonatomic) IBOutlet UIView *btnHydration;
 @property (strong, nonatomic) IBOutlet UIView *btnVideoMonitor;
 @property (strong, nonatomic) IBOutlet UIView *btnHistory;
+@property (strong, nonatomic) IBOutlet UIButton *btnSymptomConcern;
+@property (strong, nonatomic) IBOutlet UIButton *btnMedicine;
+@property (strong, nonatomic) IBOutlet UIButton *btnAppetiteHydration;
+@property (strong, nonatomic) IBOutlet UIButton *btnMonitor;
+@property (strong, nonatomic) IBOutlet UIButton *btnHistoryButton;
 @end
