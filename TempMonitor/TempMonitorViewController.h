@@ -13,7 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIView *btnTemp;
 @property (strong, nonatomic) IBOutlet UIView *btnSymptoms;
 @property (strong, nonatomic) IBOutlet UIView *btnMedication;
-@property (strong, nonatomic) IBOutlet UIButton *btnActivity;
+
 @property (strong, nonatomic) IBOutlet UIView *btnDiagnosis;
 
 @property (strong, nonatomic) IBOutlet UIView *btnAppetite;
