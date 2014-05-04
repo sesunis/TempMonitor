@@ -25,7 +25,7 @@
                   symbolName = "-[TempMonitorViewController btnMedicine]"
                   moduleName = "TempMonitor"
                   urlString = "file:///Users/sarahesunis/Documents/IOS%20Programs/TempMonitor/TempMonitor/TempMonitorViewController.h"
-                  timestampString = "420865411.620072"
+                  timestampString = "420892058.362827"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -39,7 +39,7 @@
                   symbolName = "-[TempMonitorViewController setBtnMedicine:]"
                   moduleName = "TempMonitor"
                   urlString = "file:///Users/sarahesunis/Documents/IOS%20Programs/TempMonitor/TempMonitor/TempMonitorViewController.h"
-                  timestampString = "420865411.620517"
+                  timestampString = "420892058.363241"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -63,6 +63,22 @@
             endingLineNumber = "29"
             landmarkName = "@implementation TempMonitorViewController"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProfileViewController.m"
+            timestampString = "420892540.452675"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
