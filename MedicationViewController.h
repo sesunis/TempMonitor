@@ -12,5 +12,13 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *btnMedicineSchedule;
 @property (strong, nonatomic) IBOutlet UIButton *btnAddDosageTime;
 @property (strong, nonatomic) IBOutlet UIButton *btnAutoReminder;
-
+- (IBAction)btnsave:(id)sender;
+- (IBAction)btnback:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *txtname;
+@property (weak, nonatomic) IBOutlet UITextField *txtdosage;
+@property (weak, nonatomic) IBOutlet UIDatePicker *cal;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sched;
+@property (weak, nonatomic) IBOutlet UISwitch *autoupdate;
+@property (strong) NSManagedObjectModel *
+medicinedb;
 @end

@@ -10,5 +10,6 @@
 
 @interface ProfileViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *btnAddNew;
-
+@property (strong) NSManagedObjectModel *
+birthdaydb;
 @end

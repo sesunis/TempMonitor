@@ -31,6 +31,13 @@
 		4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890B1908D0900003A923 /* HistoryViewController.m */; };
 		4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890E1909213A0003A923 /* ProfileViewController.m */; };
 		4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689111909214F0003A923 /* AddProfileViewController.m */; };
+		4EE4585F191793040049D3AC /* TempMonitorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4585E191793040049D3AC /* TempMonitorTableViewController.m */; };
+		4EE458621917943A0049D3AC /* TempMonitorMedicationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE458611917943A0049D3AC /* TempMonitorMedicationTableViewController.m */; };
+		4EE45865191794B20049D3AC /* TempMonitorSymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE45864191794B20049D3AC /* TempMonitorSymptomsTableViewController.m */; };
+		4EE45868191795C10049D3AC /* TempMonitorHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE45867191795C10049D3AC /* TempMonitorHistoryTableViewController.m */; };
+		4EE4586B19179DA80049D3AC /* TempMonitorVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4586A19179DA80049D3AC /* TempMonitorVideoTableViewController.m */; };
+		4EE4586E19179E190049D3AC /* TempMonitorBirthdayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4586D19179E190049D3AC /* TempMonitorBirthdayTableViewController.m */; };
+		4EE4587119179EA20049D3AC /* TempMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4586F19179EA20049D3AC /* TempMonitor.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +89,19 @@
 		4EA6890E1909213A0003A923 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		4EA689101909214F0003A923 /* AddProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProfileViewController.h; sourceTree = "<group>"; };
 		4EA689111909214F0003A923 /* AddProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProfileViewController.m; sourceTree = "<group>"; };
+		4EE4585D191793040049D3AC /* TempMonitorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorTableViewController.h; sourceTree = "<group>"; };
+		4EE4585E191793040049D3AC /* TempMonitorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorTableViewController.m; sourceTree = "<group>"; };
+		4EE458601917943A0049D3AC /* TempMonitorMedicationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorMedicationTableViewController.h; sourceTree = "<group>"; };
+		4EE458611917943A0049D3AC /* TempMonitorMedicationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorMedicationTableViewController.m; sourceTree = "<group>"; };
+		4EE45863191794B20049D3AC /* TempMonitorSymptomsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorSymptomsTableViewController.h; sourceTree = "<group>"; };
+		4EE45864191794B20049D3AC /* TempMonitorSymptomsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorSymptomsTableViewController.m; sourceTree = "<group>"; };
+		4EE45866191795C10049D3AC /* TempMonitorHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorHistoryTableViewController.h; sourceTree = "<group>"; };
+		4EE45867191795C10049D3AC /* TempMonitorHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorHistoryTableViewController.m; sourceTree = "<group>"; };
+		4EE4586919179DA80049D3AC /* TempMonitorVideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorVideoTableViewController.h; sourceTree = "<group>"; };
+		4EE4586A19179DA80049D3AC /* TempMonitorVideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorVideoTableViewController.m; sourceTree = "<group>"; };
+		4EE4586C19179E190049D3AC /* TempMonitorBirthdayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorBirthdayTableViewController.h; sourceTree = "<group>"; };
+		4EE4586D19179E190049D3AC /* TempMonitorBirthdayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorBirthdayTableViewController.m; sourceTree = "<group>"; };
+		4EE4587019179EA20049D3AC /* TempMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TempMonitor.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +131,7 @@
 		4E78C91319027ED6005C1A16 = {
 			isa = PBXGroup;
 			children = (
+				4EE4585C191792AA0049D3AC /* Detail Views */,
 				4EA689101909214F0003A923 /* AddProfileViewController.h */,
 				4EA689111909214F0003A923 /* AddProfileViewController.m */,
 				4EA6890D190921390003A923 /* ProfileViewController.h */,
@@ -166,6 +187,7 @@
 				4E78C93719027ED6005C1A16 /* TempMonitorViewController.h */,
 				4E78C93819027ED6005C1A16 /* TempMonitorViewController.m */,
 				4E78C93A19027ED6005C1A16 /* Images.xcassets */,
+				4EE4586F19179EA20049D3AC /* TempMonitor.xcdatamodeld */,
 				4E78C92619027ED6005C1A16 /* Supporting Files */,
 			);
 			path = TempMonitor;
@@ -198,6 +220,25 @@
 				4E78C94A19027ED7005C1A16 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EE4585C191792AA0049D3AC /* Detail Views */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4585D191793040049D3AC /* TempMonitorTableViewController.h */,
+				4EE4585E191793040049D3AC /* TempMonitorTableViewController.m */,
+				4EE458601917943A0049D3AC /* TempMonitorMedicationTableViewController.h */,
+				4EE458611917943A0049D3AC /* TempMonitorMedicationTableViewController.m */,
+				4EE45863191794B20049D3AC /* TempMonitorSymptomsTableViewController.h */,
+				4EE45864191794B20049D3AC /* TempMonitorSymptomsTableViewController.m */,
+				4EE45866191795C10049D3AC /* TempMonitorHistoryTableViewController.h */,
+				4EE45867191795C10049D3AC /* TempMonitorHistoryTableViewController.m */,
+				4EE4586919179DA80049D3AC /* TempMonitorVideoTableViewController.h */,
+				4EE4586A19179DA80049D3AC /* TempMonitorVideoTableViewController.m */,
+				4EE4586C19179E190049D3AC /* TempMonitorBirthdayTableViewController.h */,
+				4EE4586D19179E190049D3AC /* TempMonitorBirthdayTableViewController.m */,
+			);
+			name = "Detail Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,14 +342,21 @@
 			files = (
 				4EA689031908CF3F0003A923 /* AppetiteViewController.m in Sources */,
 				4EA688F11908CE530003A923 /* tempViewController.m in Sources */,
+				4EE4586B19179DA80049D3AC /* TempMonitorVideoTableViewController.m in Sources */,
 				4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */,
 				4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */,
 				4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */,
+				4EE4585F191793040049D3AC /* TempMonitorTableViewController.m in Sources */,
 				4E78C92C19027ED6005C1A16 /* main.m in Sources */,
+				4EE4587119179EA20049D3AC /* TempMonitor.xcdatamodeld in Sources */,
 				4EA688EE1908CE410003A923 /* concernViewController.m in Sources */,
 				4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */,
+				4EE45868191795C10049D3AC /* TempMonitorHistoryTableViewController.m in Sources */,
 				4EA688F71908CE960003A923 /* symptomsViewController.m in Sources */,
+				4EE45865191794B20049D3AC /* TempMonitorSymptomsTableViewController.m in Sources */,
 				4EA688F41908CE7F0003A923 /* VideoMonitorViewController.m in Sources */,
+				4EE458621917943A0049D3AC /* TempMonitorMedicationTableViewController.m in Sources */,
+				4EE4586E19179E190049D3AC /* TempMonitorBirthdayTableViewController.m in Sources */,
 				4E78C93019027ED6005C1A16 /* TempMonitorAppDelegate.m in Sources */,
 				4E78C93919027ED6005C1A16 /* TempMonitorViewController.m in Sources */,
 			);
@@ -537,6 +585,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4EE4586F19179EA20049D3AC /* TempMonitor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4EE4587019179EA20049D3AC /* TempMonitor.xcdatamodel */,
+			);
+			currentVersion = 4EE4587019179EA20049D3AC /* TempMonitor.xcdatamodel */;
+			path = TempMonitor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E78C91419027ED6005C1A16 /* Project object */;
 }

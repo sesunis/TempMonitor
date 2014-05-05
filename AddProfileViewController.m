@@ -13,18 +13,43 @@
 @end
 
 @implementation AddProfileViewController
+@synthesize scrollview;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Fetch the devices from persistent data store
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
+                                    initWithEntityName:@"Birthday"];
+    self.databasearray = [[managedObjectContext executeFetchRequest:fetchRequest
+                                                              error:nil] mutableCopy];
+    
+    //self.birthdaydb = [self.databasearray objectAtIndex:0];
+    NSLog(@"count is: %lu",(unsigned long)[self.databasearray count]);
+    if ([self.databasearray count]>0)
+    {
+        self.birthdaydb = [self.databasearray objectAtIndex:0];
+    }
+    
+    // Do any additional setup after loading the view.
+    if (self.birthdaydb) {
+        [self.txtname setText:[self.birthdaydb valueForKey:@"ap_name"]];
+        [self.txtheoght setText:[self.birthdaydb valueForKey:@"ap_height"]];
+        [self.txtweight setText:[self.birthdaydb valueForKey:@"ap_weight"]];
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"dd/MM/yyyy"];
+        
+        NSLog(@"Date is: %@", [self.birthdaydb valueForKey:@"ap_date"]);
+        
+        [self.cal setDate:[dateFormat dateFromString:[self.birthdaydb valueForKey:@"ap_date"]]];
+    }
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
-    CGSize size = [self getScreenSize];
-    self.scrollview .frame = CGRectMake(0, 50, size.width, size.height);
-    //[self.Scrollview  setContentSize:CGSizeMake(320, 1064)];
 }
 -(void)dismissKeyboard {
     // add textfields and textviews
@@ -32,84 +57,77 @@
     [self.txtName resignFirstResponder];
     [self.txtHeight resignFirstResponder];
     [self.txtWeight resignFirstResponder];
-    [self.txtData resignFirstResponder];
-    [self.txtAge resignFirstResponder];
+    [self.cal resignFirstResponder];
 }
+
+//right-click drag textfield to fileowner select doneediting
+//right-click drag textfield to fileowner select delegate
 -(IBAction) doneEditing:(id) sender {
     [sender resignFirstResponder];
 }
-
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (CGSize)getScreenSize
-{
-    //Get Screen size
-    CGSize size;
-    if (UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) && [[UIScreen mainScreen] bounds].size.height > [[UIScreen mainScreen] bounds].size.width) {
-        // in Landscape mode, width always higher than height
-        size.width = [[UIScreen mainScreen] bounds].size.height;
-        size.height = [[UIScreen mainScreen] bounds].size.width;
-    } else if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation) && [[UIScreen mainScreen] bounds].size.height < [[UIScreen mainScreen] bounds].size.width) {
-        // in Portrait mode, height always higher than width
-        size.width = [[UIScreen mainScreen] bounds].size.height;
-        size.height = [[UIScreen mainScreen] bounds].size.width;
+- (IBAction)btnsave:(id)sender {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd/MM/yyyy"];
+    NSString *dateString = [dateFormatter stringFromDate:self.cal.date];
+    
+    if (self.birthdaydb) {
+        // Update existing device
+        [self.birthdaydb setValue:self.txtname.text forKey:@"ap_name"];
+        [self.birthdaydb setValue:self.txtheoght.text forKey:@"ap_height"];
+        [self.birthdaydb setValue:self.txtweight.text forKey:@"ap_weight"];
+        [self.birthdaydb setValue:dateString forKey:@"ap_date"];
+        
     } else {
-        // otherwise it is normal
-        size.height = [[UIScreen mainScreen] bounds].size.height;
-        size.width = [[UIScreen mainScreen] bounds].size.width;
+        // Create a new device
+        NSManagedObjectModel *newDevice = [NSEntityDescription
+                                      insertNewObjectForEntityForName:@"Birthday" inManagedObjectContext:context];
+        [newDevice setValue:self.txtname.text forKey:@"ap_name"];
+        [newDevice setValue:self.txtheoght.text forKey:@"ap_height"];
+        [newDevice setValue:self.txtweight.text forKey:@"ap_weight"];
+        [newDevice setValue:dateString forKey:@"ap_date"];
     }
-    return size;
+    NSError *error = nil;
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)btnSave:(id)sender {
-    //hide keyboard
-    [self dismissKeyboard];
-    
-    //save
-    //format
-    if ([self.txtData.text  isEqual:@""])
-    {
-        self.txtData.text = @"MyProfiles";
-    }
-    self.txtData.text = [NSString stringWithFormat:@"%@\n\nName:%@\nAge:%@\nHeight:%@\nWeight:%@",
-                         self.txtData.text,self.txtName.text,self.txtHeight.text,self.txtWeight.text,self.txtAge.text];
-    
-    self.txtName.text = @"";
-    self.txtAge.text = @"";
-    self.txtHeight.text = @"";
-    self.txtWeight.text = @"";
-    
-    CGPoint scrollPoint = CGPointMake(0, self.btnBackk.frame.origin.y);
-    [self.scrollview  setContentOffset:scrollPoint animated:YES];
+- (IBAction)btnback:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-- (IBAction)btnBackk:(id)sender {
-    //get back
-    [self.scrollview setContentOffset:CGPointZero animated:YES];
+
+- (IBAction)btnrecord:(id)sender {
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     CGPoint scrollPoint = CGPointMake(0, textField.frame.origin.y);
-    [self.scrollview setContentOffset:scrollPoint animated:YES];
+    [scrollview setContentOffset:scrollPoint animated:YES];
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self.scrollview setContentOffset:CGPointZero animated:YES];
+    [scrollview setContentOffset:CGPointZero animated:YES];
 }
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     CGPoint scrollPoint = CGPointMake(0, textView.frame.origin.y);
-    [self.scrollview  setContentOffset:scrollPoint animated:YES];
+    [scrollview setContentOffset:scrollPoint animated:YES];
 }
 - (void)textViewDidEndEditing:(UITextView *)textView {
-    [self.scrollview  setContentOffset:CGPointZero animated:YES];
+    [scrollview setContentOffset:CGPointZero animated:YES];
 }
 
-- (IBAction)btnView:(id)sender {
-    //hide keyboard
-    [self dismissKeyboard];
-    //load voew
-    CGPoint scrollPoint = CGPointMake(0, self.btnBackk.frame.origin.y);
-    [self.scrollview  setContentOffset:scrollPoint animated:YES];
-
-  
-}@end
+@end

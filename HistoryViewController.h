@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HistoryViewController : UIViewController
-
+- (IBAction)btnsave:(id)sender;
+- (IBAction)btnback:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *txtNotes;
+@property (strong) NSManagedObjectModel *
+historydb
+;
 @end
+

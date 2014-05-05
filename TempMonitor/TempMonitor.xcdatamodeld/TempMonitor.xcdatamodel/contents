@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Appetite" syncable="YES"/>
+    <entity name="Birthday" syncable="YES">
+        <attribute name="ap_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ap_height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ap_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ap_weight" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="History" syncable="YES">
+        <attribute name="hv_notes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Medicine" syncable="YES">
+        <attribute name="mv_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mv_dosage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mv_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mv_remind" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mv_schedule" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Symptoms" syncable="YES">
+        <attribute name="sv_concern" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sv_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sv_notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sv_symptoms" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sv_temp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Video" syncable="YES">
+        <attribute name="vm_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vm_link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vm_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Appetite" positionX="-63" positionY="-18" width="128" height="43"/>
+        <element name="Birthday" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="Video" positionX="-36" positionY="9" width="128" height="88"/>
+        <element name="History" positionX="-18" positionY="27" width="128" height="58"/>
+        <element name="Medicine" positionX="0" positionY="45" width="128" height="118"/>
+        <element name="Symptoms" positionX="18" positionY="63" width="128" height="118"/>
+    </elements>
+</model>
