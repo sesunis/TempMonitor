@@ -76,7 +76,7 @@
                              dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    NSManagedObject *device = [self.databasearray objectAtIndex:indexPath.row];
+    NSManagedObjectModel *device = [self.databasearray objectAtIndex:indexPath.row];
     [cell.textLabel setText:[NSString stringWithFormat:@"%@", [device
                                                                valueForKey:@"vm_name"]]];
     [cell.detailTextLabel setText:[device
@@ -114,7 +114,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"UpdateData"]) {
-        NSManagedObject *selectedDevice = [self.databasearray
+        NSManagedObjectModel *selectedDevice = [self.databasearray
                                            objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
         VideoMonitorViewController *destViewController = segue.destinationViewController;
         destViewController.videodb = selectedDevice;

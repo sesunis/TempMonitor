@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5465911918567400EFD83E /* TempMonitorAppetiteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5465901918567400EFD83E /* TempMonitorAppetiteTableViewController.m */; };
 		4E78C92019027ED6005C1A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78C91F19027ED6005C1A16 /* Foundation.framework */; };
 		4E78C92219027ED6005C1A16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78C92119027ED6005C1A16 /* CoreGraphics.framework */; };
 		4E78C92419027ED6005C1A16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78C92319027ED6005C1A16 /* UIKit.framework */; };
@@ -31,7 +32,6 @@
 		4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890B1908D0900003A923 /* HistoryViewController.m */; };
 		4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6890E1909213A0003A923 /* ProfileViewController.m */; };
 		4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA689111909214F0003A923 /* AddProfileViewController.m */; };
-		4EE4585F191793040049D3AC /* TempMonitorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4585E191793040049D3AC /* TempMonitorTableViewController.m */; };
 		4EE458621917943A0049D3AC /* TempMonitorMedicationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE458611917943A0049D3AC /* TempMonitorMedicationTableViewController.m */; };
 		4EE45865191794B20049D3AC /* TempMonitorSymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE45864191794B20049D3AC /* TempMonitorSymptomsTableViewController.m */; };
 		4EE45868191795C10049D3AC /* TempMonitorHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE45867191795C10049D3AC /* TempMonitorHistoryTableViewController.m */; };
@@ -51,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E54658F1918567400EFD83E /* TempMonitorAppetiteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorAppetiteTableViewController.h; sourceTree = "<group>"; };
+		4E5465901918567400EFD83E /* TempMonitorAppetiteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorAppetiteTableViewController.m; sourceTree = "<group>"; };
 		4E78C91C19027ED6005C1A16 /* TempMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E78C91F19027ED6005C1A16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4E78C92119027ED6005C1A16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,8 +91,6 @@
 		4EA6890E1909213A0003A923 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		4EA689101909214F0003A923 /* AddProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProfileViewController.h; sourceTree = "<group>"; };
 		4EA689111909214F0003A923 /* AddProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProfileViewController.m; sourceTree = "<group>"; };
-		4EE4585D191793040049D3AC /* TempMonitorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorTableViewController.h; sourceTree = "<group>"; };
-		4EE4585E191793040049D3AC /* TempMonitorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorTableViewController.m; sourceTree = "<group>"; };
 		4EE458601917943A0049D3AC /* TempMonitorMedicationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorMedicationTableViewController.h; sourceTree = "<group>"; };
 		4EE458611917943A0049D3AC /* TempMonitorMedicationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempMonitorMedicationTableViewController.m; sourceTree = "<group>"; };
 		4EE45863191794B20049D3AC /* TempMonitorSymptomsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempMonitorSymptomsTableViewController.h; sourceTree = "<group>"; };
@@ -225,8 +225,8 @@
 		4EE4585C191792AA0049D3AC /* Detail Views */ = {
 			isa = PBXGroup;
 			children = (
-				4EE4585D191793040049D3AC /* TempMonitorTableViewController.h */,
-				4EE4585E191793040049D3AC /* TempMonitorTableViewController.m */,
+				4E54658F1918567400EFD83E /* TempMonitorAppetiteTableViewController.h */,
+				4E5465901918567400EFD83E /* TempMonitorAppetiteTableViewController.m */,
 				4EE458601917943A0049D3AC /* TempMonitorMedicationTableViewController.h */,
 				4EE458611917943A0049D3AC /* TempMonitorMedicationTableViewController.m */,
 				4EE45863191794B20049D3AC /* TempMonitorSymptomsTableViewController.h */,
@@ -346,8 +346,8 @@
 				4EA688FA1908CEA60003A923 /* MedicationViewController.m in Sources */,
 				4EA689121909214F0003A923 /* AddProfileViewController.m in Sources */,
 				4EA6890F1909213A0003A923 /* ProfileViewController.m in Sources */,
-				4EE4585F191793040049D3AC /* TempMonitorTableViewController.m in Sources */,
 				4E78C92C19027ED6005C1A16 /* main.m in Sources */,
+				4E5465911918567400EFD83E /* TempMonitorAppetiteTableViewController.m in Sources */,
 				4EE4587119179EA20049D3AC /* TempMonitor.xcdatamodeld in Sources */,
 				4EA688EE1908CE410003A923 /* concernViewController.m in Sources */,
 				4EA6890C1908D0900003A923 /* HistoryViewController.m in Sources */,
